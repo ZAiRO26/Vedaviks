@@ -150,7 +150,7 @@ const Insights = () => {
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              FreekiWebsite <span className="gradient-text">Insights</span>
+              VedaViks Media <span className="gradient-text">Insights</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8">
               Industry news, tips on digital marketing and app development, plus case studies to help you grow.

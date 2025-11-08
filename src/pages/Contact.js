@@ -17,27 +17,27 @@ const Contact = () => {
       country: "Poland",
       address: "ul. Grzybowska 80/82, 00-844 Warsaw",
       phone: "+48 22 123 4567",
-      email: "warsaw@freekiwebsite.com",
+      email: "warsaw@vedaviksmedia.com",
       hours: "9 AM - 5 PM CET",
-      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.953581566351!2d21.0117846157965!3d52.22967567976059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8c0a2a8d5d%3A0x6b44f2b3e8e7a0a!2sfreekiwebsite%20Warsaw!5e0!3m2!1sen!2spl!4v1628587399999!5m2!1sen!2spl",
+      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.953581566351!2d21.0117846157965!3d52.22967567976059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8c0a2a8d5d%3A0x6b44f2b3e8e7a0a!2sVedaViks%20Media%20Warsaw!5e0!3m2!1sen!2spl!4v1628587399999!5m2!1sen!2spl",
     },
     {
       city: "Poznań",
       country: "Poland",
       address: "ul. Grunwaldzka 182, 60-166 Poznań",
       phone: "+48 61 123 4567",
-      email: "poznan@freekiwebsite.com",
+      email: "poznan@vedaviksmedia.com",
       hours: "9 AM - 5 PM CET",
-      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.953581566351!2d17.0385375157965!3d51.10788527957164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c4b793d5d7%3A0x8f7f8f6f6f6f6f6f!2sfreekiwebsite%20Poznan!5e0!3m2!1sen!2spl!4v1628587499999!5m2!1sen!2spl",
+      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.953581566351!2d17.0385375157965!3d51.10788527957164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c4b793d5d7%3A0x8f7f8f6f6f6f6f6f!2sVedaViks%20Media%20Poznan!5e0!3m2!1sen!2spl!4v1628587499999!5m2!1sen!2spl",
     },
     {
       city: "Wrocław",
       country: "Poland",
       address: "ul. Św. Antoniego 2/4, 50-073 Wrocław",
       phone: "+48 71 123 4567",
-      email: "wroclaw@freekiwebsite.com",
+      email: "wroclaw@vedaviksmedia.com",
       hours: "9 AM - 5 PM CET",
-      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.953581566351!2d17.0385375157965!3d51.10788527957164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c4b793d5d7%3A0x8f7f8f6f6f6f6f6f!2sfreekiwebsite%20Wroclaw!5e0!3m2!1sen!2spl!4v1628587599999!5m2!1sen!2spl",
+      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.953581566351!2d17.0385375157965!3d51.10788527957164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c4b793d5d7%3A0x8f7f8f6f6f6f6f6f!2sVedaViks%20Media%20Wroclaw!5e0!3m2!1sen!2spl!4v1628587599999!5m2!1sen!2spl",
     }
   ];
 
@@ -46,22 +46,22 @@ const Contact = () => {
       icon: <Briefcase className="w-8 h-8 text-white"/>,
       title: "Business Inquiries",
       description: "Let's talk about your project and how we can help you grow.",
-      contact: "hello@freekiwebsite.com",
-      link: "mailto:hello@freekiwebsite.com",
+      contact: "hello@vedaviksmedia.com",
+      link: "mailto:hello@vedaviksmedia.com",
     },
     {
       icon: <Users className="w-8 h-8 text-white"/>,
       title: "Careers",
       description: "Join our team of talented professionals and shape the future of technology.",
-      contact: "careers@freekiwebsite.com",
-      link: "mailto:careers@freekiwebsite.com"
+      contact: "careers@vedaviksmedia.com",
+      link: "mailto:careers@vedaviksmedia.com"
     },
     {
       icon: <Megaphone className="w-8 h-8 text-white"/>,
       title: "Media & Press",
       description: "For all media inquiries, please get in touch with our communications team.",
-      contact: "press@freekiwebsite.com",
-      link: "mailto:press@freekiwebsite.com",
+      contact: "press@vedaviksmedia.com",
+      link: "mailto:press@vedaviksmedia.com",
     }
   ];
 
@@ -71,7 +71,7 @@ const Contact = () => {
       answer: "We offer a wide range of services including web development, mobile app development, product design, and digital consulting. We work with companies of all sizes, from startups to large enterprises."
     },
     {
-      question: "How does the project process work at freekiwebsite?",
+      question: "How does the project process work at VedaViks Media?",
       answer: "Our process is collaborative and transparent. We start with a discovery phase to understand your needs, followed by design, development, and testing. We use agile methodologies to ensure we deliver value quickly and efficiently."
     },
     {
@@ -103,7 +103,7 @@ const Contact = () => {
             <div className="mt-6 flex flex-col md:flex-row justify-center items-center gap-6 text-gray-300">
               <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-white" />
-                <a href="mailto:hello@freekiwebsite.com" className="hover:text-white">hello@freekiwebsite.com</a>
+                <a href="mailto:hello@vedaviksmedia.com" className="hover:text-white">hello@vedaviksmedia.com</a>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5 text-white" />

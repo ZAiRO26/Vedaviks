@@ -91,11 +91,11 @@ const Navbar = () => {
   const aboutItems = [
     { name: 'How we work', href: '/about/how-we-work' },
     { name: 'Sustainability', href: '/about/sustainability' },
-    { name: 'Working at FreekiWebsite', href: '/about/careers' },
+    { name: 'Working at VedaViks Media', href: '/about/careers' },
     { name: 'Job opportunities', href: '/about/jobs' },
     { name: 'Contact us', href: '/contact' },
     { name: 'Press Office', href: '/about/press' },
-    { name: 'Refer FreekiWebsite', href: '/about/refer' },
+    { name: 'Refer VedaViks Media', href: '/about/refer' },
   ];
 
   const insightsItems = [
@@ -111,9 +111,9 @@ const Navbar = () => {
           <div className="flex-1 flex items-center justify-start">
             <Link to="/" className="flex items-center space-x-2" onClick={handleLogoClick}>
               <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-                <span className="font-logo text-black text-lg">F</span>
+                <span className="font-logo text-black text-lg">V</span>
               </div>
-              <span className="font-logo text-xl text-white">FreekiWebsite</span>
+              <span className="font-logo text-xl text-white">VedaViks Media</span>
             </Link>
           </div>
 

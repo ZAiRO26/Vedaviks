@@ -1,15 +1,15 @@
-# FreekiWebsite Clone
+# VedaViks Media Website
 
-This project is a comprehensive clone of the [FreekiWebsite](https://www.freekiwebsite.com/) website, built from scratch using React and Tailwind CSS. It aims to replicate the design, functionality, and user experience of the original site, including its modern all-black theme and dynamic navigation.
+This project is a comprehensive website for [VedaViks Media](https://vedaviksmedia.com/), built from scratch using React and Tailwind CSS. It delivers a modern all-black theme, dynamic navigation, and robust routing modeled on best-in-class agency sites.
 
 ## Features
 
-- **Complete Website Clone:** All major pages from the original FreekiWebsite site are included: Home, Services, Industries, Clients, About, Insights, and Contact.
+- **Complete Website:** All major pages for VedaViks Media are included: Home, Services, Industries, Clients, About, Insights, and Contact.
 - **Modern All-Black Theme:** A sleek and professional all-black design has been implemented across the entire website, providing a consistent and visually appealing user experience.
 - **Responsive Design:** The layout is fully responsive and optimized for various screen sizes, from mobile devices to desktops.
 - **Dynamic Navigation:** The navigation bar is initially transparent, becomes solid on scroll, and hides/appears based on scroll direction for an enhanced UX.
 - **Component-Based Architecture:** Built with a clean and modular component structure in React, making the codebase easy to maintain and scale.
-- **Custom Tailwind CSS Theme:** The project uses a custom Tailwind CSS configuration with a specific color palette, font styles, and animations to match the FreekiWebsite branding.
+- **Custom Tailwind CSS Theme:** The project uses a custom Tailwind CSS configuration with a specific color palette, font styles, and animations to match the VedaViks Media branding.
 - **Routing with React Router:** All page navigation is handled by `react-router-dom`, ensuring a seamless single-page application experience.
 - **Netlify Ready:** The project includes a `netlify.toml` file with the necessary build configurations and redirects for easy deployment on Netlify.
 - **Detailed README:** This `README.md` provides comprehensive instructions for installation, development, and deployment.
@@ -131,7 +131,7 @@ Netlify will automatically build and deploy your site. The `netlify.toml` file i
 
 ## Conclusion
 
-This FreekiWebsite clone serves as a comprehensive example of building a modern, fully-featured website with React and Tailwind CSS. It demonstrates best practices in project setup, component architecture, responsive design, and deployment.
+This VedaViks Media website serves as a comprehensive example of building a modern, fully-featured website with React and Tailwind CSS. It demonstrates best practices in project setup, component architecture, responsive design, and deployment.
 
 ## 🚀 Features
 
@@ -286,4 +286,4 @@ For support, email support@example.com or create an issue in this repository.
 
 ---
 
-**Made with ❤️ by [Your Name]** 
+**Made with ❤️ by [Your Name]**

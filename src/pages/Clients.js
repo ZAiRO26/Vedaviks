@@ -116,7 +116,7 @@ const Clients = () => {
       name: "Mark Greiner",
       role: "Digital Innovation Manager",
       company: "Merck",
-      quote: "Excellence and speed. It's rare to get both, and FreekiWebsite delivers.",
+      quote: "Excellence and speed. It's rare to get both, and VedaViks Media delivers.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face"
     },
@@ -124,7 +124,7 @@ const Clients = () => {
       name: "Adi Pavlovic",
       role: "Director of Innovation",
       company: "Keller Williams",
-      quote: "FreekiWebsite has been the best agency we've worked with so far.",
+      quote: "VedaViks Media has been the best agency we've worked with so far.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face"
     },

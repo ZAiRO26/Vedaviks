@@ -32,7 +32,7 @@ const ScrollToTopButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-freekiwebsite-get-in-touch text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-freekiwebsite-get-in-touch-hover transition-colors duration-300 z-50"
+          className="fixed bottom-8 right-8 bg-vedaviks-get-in-touch text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-vedaviks-get-in-touch-hover transition-colors duration-300 z-50"
           aria-label="Scroll to top"
         >
           <ArrowUp className="w-6 h-6" />
@@ -42,4 +42,4 @@ const ScrollToTopButton = () => {
   );
 };
 
-export default ScrollToTopButton; 
+export default ScrollToTopButton;

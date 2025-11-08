@@ -288,7 +288,7 @@ const Industries = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Why Choose <span className="gradient-text">FreekiWebsite</span>
+              Why Choose <span className="gradient-text">VedaViks Media</span>
             </h2>
           </div>
 
@@ -324,4 +324,4 @@ const Industries = () => {
   );
 };
 
-export default Industries; 
+export default Industries;
