@@ -4,12 +4,7 @@ import { ArrowRight, Play } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Home = () => {
-  const trustedBy = [
-    { name: 'ikea', logo: 'IKEA' },
-    { name: 'ubs', logo: 'UBS' },
-    { name: 'volkswagen', logo: 'Volkswagen' },
-    { name: 'olx', logo: 'OLX' },
-  ];
+  // Removed unused 'trustedBy' to satisfy ESLint in CI
 
   const caseStudies = [
     {
