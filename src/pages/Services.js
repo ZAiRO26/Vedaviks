@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Code, Megaphone, Target, Camera, ShoppingCart, Users, Lightbulb } from 'lucide-react';
+import { ArrowRight, Code, Megaphone, Target, Camera, ShoppingCart, Users, Lightbulb, Briefcase, Gift, Palette, Calendar, Scale, Heart, BarChart3, Wallet, FileText } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -102,6 +102,161 @@ const Services = () => {
         'Launch planning and handover',
       ],
       image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop',
+    },
+    // Added services
+    {
+      id: 'business-websites',
+      icon: Briefcase,
+      title: 'Business Websites',
+      description: 'Professional websites tailored for your business growth',
+      features: [
+        'Conversion-focused design',
+        'Clear information architecture',
+        'Lead capture and analytics',
+        'SEO and performance best practices',
+        'Ongoing support and updates',
+      ],
+      image: 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=600&h=400&fit=crop',
+    },
+    {
+      id: 'digital-invitations',
+      icon: Gift,
+      title: 'Digital Invitations',
+      description: 'Beautiful invitations for your special moments',
+      features: [
+        'Elegant designs and templates',
+        'RSVP and guest management',
+        'Shareable links and QR codes',
+        'Email and social sharing',
+        'Analytics and confirmations',
+      ],
+      image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&h=400&fit=crop',
+    },
+    {
+      id: 'photographers',
+      icon: Camera,
+      title: 'Photographers',
+      description: 'Showcase your photography portfolio with a stunning website',
+      features: [
+        'Responsive galleries and albums',
+        'Client-proofing and downloads',
+        'Booking inquiries and forms',
+        'Watermarking and image optimization',
+        'SEO-ready portfolio pages',
+      ],
+      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=600&h=400&fit=crop',
+    },
+    {
+      id: 'makeup-artists',
+      icon: Palette,
+      title: 'Makeup Artists',
+      description: 'Exhibit your artistry and attract new clients',
+      features: [
+        'Portfolio showcases and lookbooks',
+        'Service listings and pricing',
+        'Testimonials and reviews',
+        'Booking forms and calendars',
+        'Instagram-friendly sharing',
+      ],
+      image: 'https://images.unsplash.com/photo-1512499617640-c2f999098c32?w=600&h=400&fit=crop',
+    },
+    {
+      id: 'wedding-planners',
+      icon: Calendar,
+      title: 'Wedding Planners',
+      description: 'Display your portfolio and wedding packages',
+      features: [
+        'Service packages and inclusions',
+        'Event galleries and stories',
+        'Inquiry pipelines and forms',
+        'Vendor listings and partners',
+        'Blog and planning resources',
+      ],
+      image: 'https://images.unsplash.com/photo-1511909525232-1829e6e6e3c0?w=600&h=400&fit=crop',
+    },
+    {
+      id: 'event-planners',
+      icon: Calendar,
+      title: 'Event Planners',
+      description: 'Promote your event planning services',
+      features: [
+        'Services and pricing tables',
+        'Case studies and results',
+        'Contact and discovery forms',
+        'Timeline and checklist tools',
+        'Blog and resources',
+      ],
+      image: 'https://images.unsplash.com/photo-1519671482749-f31cae0c1f4f?w=600&h=400&fit=crop',
+    },
+    {
+      id: 'lawyers',
+      icon: Scale,
+      title: 'Lawyers',
+      description: 'Build trust with a professional website that highlights your expertise',
+      features: [
+        'Practice areas and attorney bios',
+        'Case results and testimonials',
+        'Consultation and intake forms',
+        'Secure document sharing',
+        'Compliance and accessibility',
+      ],
+      image: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&h=400&fit=crop',
+    },
+    {
+      id: 'yoga-teachers',
+      icon: Heart,
+      title: 'Yoga Teachers',
+      description: 'Connect with students and share your practice',
+      features: [
+        'Class schedules and booking',
+        'Retreats and workshops',
+        'Teacher bios and philosophy',
+        'Blog and learning resources',
+        'Newsletter and community',
+      ],
+      image: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&h=400&fit=crop',
+    },
+    {
+      id: 'business-consultants',
+      icon: BarChart3,
+      title: 'Business Consultants',
+      description: 'Present your expertise and consulting services',
+      features: [
+        'Service pillars and outcomes',
+        'Lead magnets and CTAs',
+        'Case studies and ROI stories',
+        'Booking and contact flows',
+        'Resource library and blog',
+      ],
+      image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&h=400&fit=crop',
+    },
+    {
+      id: 'investment-consultants',
+      icon: Wallet,
+      title: 'Investment Consultants',
+      description: 'Share your financial advisory services',
+      features: [
+        'Service tiers and packages',
+        'Compliance and disclosures',
+        'Performance highlights and charts',
+        'Secure contact and scheduling',
+        'Newsletter and insights',
+      ],
+      image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=600&h=400&fit=crop',
+    },
+    {
+      id: 'online-resume',
+      icon: FileText,
+      title: 'Online Resume',
+      description: 'Stand out with a professional online resume',
+      features: [
+        'Skills, experience, and projects',
+        'Case highlights and achievements',
+        'Downloadable PDF export',
+        'Contact and scheduling links',
+        'SEO-friendly profile pages',
+      ],
+      image: 'https://images.unsplash.com/photo-1488998427799-e3362cec87c3?w=600&h=400&fit=crop',
     },
   ];
 

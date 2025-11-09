@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle, Code, Megaphone, Target, Camera, ShoppingCart, Users, Lightbulb } from 'lucide-react';
+import { ArrowRight, CheckCircle, Code, Megaphone, Target, Camera, ShoppingCart, Users, Lightbulb, Briefcase, Gift, Palette, Calendar, Scale, Heart, BarChart3, Wallet, FileText } from 'lucide-react';
 
 const servicesData = {
   'app-development': {
@@ -93,6 +93,150 @@ const servicesData = {
       'Delivery planning and vendor coordination',
       'Risk management and stakeholder comms',
       'Launch readiness and post‑launch support',
+    ],
+  },
+  // Additional services with professional pages
+  'business-websites': {
+    icon: Briefcase,
+    title: 'Business Websites',
+    subtitle: 'Conversion‑focused websites engineered for growth and credibility.',
+    heroImage: 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=1200&h=600&fit=crop',
+    highlights: ['Clear IA', 'Lead capture', 'SEO & speed'],
+    features: [
+      'Information architecture and content strategy',
+      'Modern, responsive UI with performance budgets',
+      'Lead forms, analytics, and CRM-friendly exports',
+      'On‑page SEO and accessibility best practices',
+    ],
+  },
+  'digital-invitations': {
+    icon: Gift,
+    title: 'Digital Invitations',
+    subtitle: 'Elegant digital invites with RSVP, sharing, and tracking.',
+    heroImage: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&h=600&fit=crop',
+    highlights: ['RSVP', 'Shareable', 'Templates'],
+    features: [
+      'Customizable themes and typography',
+      'Guest lists, RSVPs, and confirmations',
+      'Share via links, email, and social platforms',
+      'Analytics on opens and responses',
+    ],
+  },
+  photographers: {
+    icon: Camera,
+    title: 'Photographers',
+    subtitle: 'Portfolio websites that highlight your craft and bookings.',
+    heroImage: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=1200&h=600&fit=crop',
+    highlights: ['Responsive galleries', 'Client proofing', 'Booking'],
+    features: [
+      'High‑performance galleries and albums',
+      'Client proofing with protected links',
+      'Inquiries, pricing tables, and packages',
+      'Image optimization and watermarking',
+    ],
+  },
+  'makeup-artists': {
+    icon: Palette,
+    title: 'Makeup Artists',
+    subtitle: 'Showcase looks, services, and reviews in a polished site.',
+    heroImage: 'https://images.unsplash.com/photo-1512499617640-c2f999098c32?w=1200&h=600&fit=crop',
+    highlights: ['Lookbooks', 'Bookings', 'Testimonials'],
+    features: [
+      'Service listings, pricing, and FAQs',
+      'Portfolio galleries and social embeds',
+      'Reviews and testimonials modules',
+      'Booking forms and availability calendars',
+    ],
+  },
+  'wedding-planners': {
+    icon: Calendar,
+    title: 'Wedding Planners',
+    subtitle: 'Portfolios, packages, and planning resources for couples.',
+    heroImage: 'https://images.unsplash.com/photo-1511909525232-1829e6e6e3c0?w=1200&h=600&fit=crop',
+    highlights: ['Packages', 'Galleries', 'Vendors'],
+    features: [
+      'Event galleries and success stories',
+      'Packages with inclusions and add‑ons',
+      'Vendor directories and partner pages',
+      'Inquiry and discovery call flows',
+    ],
+  },
+  'event-planners': {
+    icon: Calendar,
+    title: 'Event Planners',
+    subtitle: 'Professional sites that convert inquiries into booked events.',
+    heroImage: 'https://images.unsplash.com/photo-1519671482749-f31cae0c1f4f?w=1200&h=600&fit=crop',
+    highlights: ['Services', 'Case studies', 'Contact'],
+    features: [
+      'Service pages with outcomes and deliverables',
+      'Case studies and measurable results',
+      'Lead capture and scheduling integrations',
+      'Blog and planning resources',
+    ],
+  },
+  lawyers: {
+    icon: Scale,
+    title: 'Lawyers',
+    subtitle: 'Professional websites to build trust and convert consultations.',
+    heroImage: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1200&h=600&fit=crop',
+    highlights: ['Practice areas', 'Attorney bios', 'Intake'],
+    features: [
+      'Practice areas, attorney bios, and awards',
+      'Case results, testimonials, and trust signals',
+      'Consultation forms with intake workflows',
+      'Accessibility and compliance guidance',
+    ],
+  },
+  'yoga-teachers': {
+    icon: Heart,
+    title: 'Yoga Teachers',
+    subtitle: 'Share your classes, retreats, and philosophy online.',
+    heroImage: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1200&h=600&fit=crop',
+    highlights: ['Schedules', 'Retreats', 'Community'],
+    features: [
+      'Class schedules with booking links',
+      'Retreats and workshops pages',
+      'Teacher bios and values',
+      'Blog and newsletter integrations',
+    ],
+  },
+  'business-consultants': {
+    icon: BarChart3,
+    title: 'Business Consultants',
+    subtitle: 'Present your expertise with case studies and strong CTAs.',
+    heroImage: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&h=600&fit=crop',
+    highlights: ['Positioning', 'Case studies', 'Lead gen'],
+    features: [
+      'Service pillars and outcomes',
+      'ROI‑oriented case studies and testimonials',
+      'Lead magnets, CTAs, and scheduling flows',
+      'Resource library and insights',
+    ],
+  },
+  'investment-consultants': {
+    icon: Wallet,
+    title: 'Investment Consultants',
+    subtitle: 'Clear services, disclosures, and contact flows for advisory.',
+    heroImage: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&h=600&fit=crop',
+    highlights: ['Packages', 'Compliance', 'Insights'],
+    features: [
+      'Service tiers and packages with outcomes',
+      'Compliance statements and disclosures',
+      'Performance highlights and charts',
+      'Secure contact and scheduling',
+    ],
+  },
+  'online-resume': {
+    icon: FileText,
+    title: 'Online Resume',
+    subtitle: 'A clean, professional profile that showcases your work.',
+    heroImage: 'https://images.unsplash.com/photo-1488998427799-e3362cec87c3?w=1200&h=600&fit=crop',
+    highlights: ['Skills', 'Projects', 'Contact'],
+    features: [
+      'Skills, experience, and featured projects',
+      'Downloadable PDF and shareable link',
+      'Contact and scheduling links',
+      'SEO‑friendly profile pages',
     ],
   },
 };

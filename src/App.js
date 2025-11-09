@@ -15,6 +15,10 @@ import NotFound from './pages/NotFound';
 import CaseStudyDetail from './pages/CaseStudyDetail';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollToTopButton from './components/ScrollToTopButton';
+import WhatsAppFloatingButton from './components/WhatsAppFloatingButton';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
+import Cookies from './pages/Cookies';
 
 function App() {
   return (
@@ -44,10 +48,14 @@ function App() {
             <Route path="/insights/blog" element={<Insights />} />
             <Route path="/insights/newsletters" element={<Insights />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/cookies" element={<Cookies />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
+        <WhatsAppFloatingButton />
         <ScrollToTopButton />
       </div>
     </Router>

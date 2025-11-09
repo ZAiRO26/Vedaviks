@@ -6,6 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const dropdownTimeoutRef = useRef(null);
+  const navRef = useRef(null);
 
   const [showNav, setShowNav] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -42,6 +43,27 @@ const Navbar = () => {
     };
   }, [lastScrollY, isOpen]);
 
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
+
+  // Close mobile menu on outside tap/click
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!isOpen) return;
+      if (navRef.current && !navRef.current.contains(e.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, [isOpen]);
+
   const handleLogoClick = (e) => {
     if (location.pathname === '/') {
       e.preventDefault();
@@ -72,6 +94,18 @@ const Navbar = () => {
     { name: 'Virtual AI Product Photography', href: '/services/virtual-ai-product-photography' },
     { name: 'Shopping Websites / E-commerce', href: '/services/ecommerce' },
     { name: 'Idea to Go Live', href: '/services/idea-to-go-live' },
+    // Newly added services
+    { name: 'Business Websites', href: '/services/business-websites' },
+    { name: 'Digital Invitations', href: '/services/digital-invitations' },
+    { name: 'Photographers', href: '/services/photographers' },
+    { name: 'Makeup Artists', href: '/services/makeup-artists' },
+    { name: 'Wedding Planners', href: '/services/wedding-planners' },
+    { name: 'Event Planners', href: '/services/event-planners' },
+    { name: 'Lawyers', href: '/services/lawyers' },
+    { name: 'Yoga Teachers', href: '/services/yoga-teachers' },
+    { name: 'Business Consultants', href: '/services/business-consultants' },
+    { name: 'Investment Consultants', href: '/services/investment-consultants' },
+    { name: 'Online Resume', href: '/services/online-resume' },
   ];
 
   const industriesItems = [
@@ -104,15 +138,17 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ease-in-out ${(isScrolled || isOpen) ? 'bg-black shadow-lg' : 'bg-transparent'} ${showNav ? 'translate-y-0' : '-translate-y-full'}`}>
+    <nav ref={navRef} className={`fixed w-full top-0 z-50 transition-all duration-300 ease-in-out ${(isScrolled || isOpen) ? 'bg-black shadow-lg' : 'bg-transparent'} ${showNav ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="container-custom">
         <div className="flex items-center h-16">
           {/* Left: Logo */}
           <div className="flex-1 flex items-center justify-start">
             <Link to="/" className="flex items-center space-x-2" onClick={handleLogoClick}>
-              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-                <span className="font-logo text-black text-lg">V</span>
-              </div>
+              <img
+                src={process.env.PUBLIC_URL + '/assets/VVmedia%20logo%201.png'}
+                alt="VedaViks Media"
+                className="w-8 h-8 rounded-lg object-contain bg-white"
+              />
               <span className="font-logo text-xl text-white">VedaViks Media</span>
             </Link>
           </div>
@@ -263,12 +299,12 @@ const Navbar = () => {
         {isOpen && (
           <div className="lg:hidden bg-black border-t border-gray-800">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link to="/services" className="block px-3 py-2 text-white hover:bg-gray-900">Services</Link>
-              <Link to="/industries" className="block px-3 py-2 text-white hover:bg-gray-900">Industries</Link>
-              <Link to="/clients" className="block px-3 py-2 text-white hover:bg-gray-900">Clients</Link>
-              <Link to="/about" className="block px-3 py-2 text-white hover:bg-gray-900">About us</Link>
-              <Link to="/insights" className="block px-3 py-2 text-white hover:bg-gray-900">Insights</Link>
-              <Link to="/contact" className="block px-3 py-2 text-white hover:bg-gray-900">Get in touch</Link>
+              <Link to="/services" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-white hover:bg-gray-900">Services</Link>
+              <Link to="/industries" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-white hover:bg-gray-900">Industries</Link>
+              <Link to="/clients" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-white hover:bg-gray-900">Clients</Link>
+              <Link to="/about" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-white hover:bg-gray-900">About us</Link>
+              <Link to="/insights" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-white hover:bg-gray-900">Insights</Link>
+              <Link to="/contact" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-white hover:bg-gray-900">Get in touch</Link>
             </div>
           </div>
         )}

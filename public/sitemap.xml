@@ -9,6 +9,18 @@
   <url><loc>https://example.com/services/virtual-ai-product-photography</loc></url>
   <url><loc>https://example.com/services/ecommerce</loc></url>
   <url><loc>https://example.com/services/idea-to-go-live</loc></url>
+  <!-- Newly added services -->
+  <url><loc>https://example.com/services/business-websites</loc></url>
+  <url><loc>https://example.com/services/digital-invitations</loc></url>
+  <url><loc>https://example.com/services/photographers</loc></url>
+  <url><loc>https://example.com/services/makeup-artists</loc></url>
+  <url><loc>https://example.com/services/wedding-planners</loc></url>
+  <url><loc>https://example.com/services/event-planners</loc></url>
+  <url><loc>https://example.com/services/lawyers</loc></url>
+  <url><loc>https://example.com/services/yoga-teachers</loc></url>
+  <url><loc>https://example.com/services/business-consultants</loc></url>
+  <url><loc>https://example.com/services/investment-consultants</loc></url>
+  <url><loc>https://example.com/services/online-resume</loc></url>
   <url><loc>https://example.com/industries</loc></url>
   <url><loc>https://example.com/industries/finance</loc></url>
   <url><loc>https://example.com/industries/commerce</loc></url>

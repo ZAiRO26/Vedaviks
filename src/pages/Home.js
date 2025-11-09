@@ -56,27 +56,24 @@ const Home = () => {
     }
   ];
 
-  const testimonials = [
+  const teamMembers = [
     {
-      name: "Mark Greiner",
-      role: "Digital Innovation Manager",
-      company: "Merck",
-      quote: "Excellence and speed. It's rare to get both, and VedaViks Media delivers.",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face"
+      name: "Owner",
+      role: "Owner",
+      avatar: "/assets/Raviowner.jpg",
+      bio: "Leads vision, strategy, and client success."
     },
     {
-      name: "Adi Pavlovic",
-      role: "Director of Innovation",
-      company: "Keller Williams",
-      quote: "VedaViks Media has been the best agency we've worked with so far.",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face"
+      name: "Marketing & Sales Head",
+      role: "Marketing & Sales Head",
+      avatar: "/assets/shikharmakting.jpg",
+      bio: "Drives growth, partnerships, and revenue."
     },
     {
-      name: "Dally Singh",
-      role: "Chief Product Officer",
-      company: "Total Processing",
-      quote: "It doesn't feel like an external team, it feels like we're just working together.",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face"
+      name: "Digital & Social Media Lead",
+      role: "Digital & Social Media Lead",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face",
+      bio: "Owns content, social, and digital campaigns."
     }
   ];
 
@@ -119,33 +116,23 @@ const Home = () => {
         <div className="container-custom relative z-20">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              One place for industrial business owners & service providers
+              Your Vision, Engineered.
             </h1>
             <p className="text-lg md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto">
-              From custom app development and social media marketing to Meta/Instagram ad campaigns, Instagram virtual avatars, virtual AI product photography, and high‑converting e‑commerce — we help you go from idea to live.
+              We provide a complete suite of development and marketing services for industrial businesses. Let us handle the tech, so you can focus on growth.
             </p>
             
-            {/* Trusted By Section */}
-            <div className="mb-12">
-              <p className="text-sm text-gray-400 mb-4">Trusted by:</p>
-              <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-                {trustedBy.map((company) => (
-                  <div key={company.name} className="text-2xl font-bold text-white">
-                    {company.logo}
-                  </div>
-                ))}
-              </div>
-            </div>
+            {/* Trusted By Section removed per request */}
 
             {/* CTA Section */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link to="/contact" className="btn-primary text-lg px-8 py-4">
                 Request a quote
               </Link>
-              <div className="flex items-center space-x-2 text-white hover:text-gray-300 cursor-pointer">
+              <Link to="/services" className="flex items-center space-x-2 text-white hover:text-gray-300">
                 <Play className="w-5 h-5" />
-                <span className="font-semibold">Watch our story</span>
-              </div>
+                <span className="font-semibold">View Services</span>
+              </Link>
             </div>
           </div>
         </div>
@@ -162,6 +149,7 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
+              // Existing core services
               { name: 'App Development', href: '/services/app-development', blurb: 'Custom mobile/web apps built for operations.' },
               { name: 'Social Media Marketing', href: '/services/social-media-marketing', blurb: 'Account management, content, scheduling.' },
               { name: 'Meta/Instagram Ads', href: '/services/meta-instagram-ads', blurb: 'Targeted campaigns and optimization.' },
@@ -169,6 +157,18 @@ const Home = () => {
               { name: 'Virtual AI Product Photography', href: '/services/virtual-ai-product-photography', blurb: 'Studio‑grade imagery at scale.' },
               { name: 'Shopping Websites / E‑commerce', href: '/services/ecommerce', blurb: 'High‑converting storefronts and catalogs.' },
               { name: 'Idea to Go Live', href: '/services/idea-to-go-live', blurb: 'Consulting and end‑to‑end delivery.' },
+              // Additional services from request
+              { name: 'Business Websites', href: '/services/business-websites', blurb: 'Professional websites tailored for your business growth.' },
+              { name: 'Digital Invitations', href: '/services/digital-invitations', blurb: 'Beautiful invitations for your special moments.' },
+              { name: 'Photographers', href: '/services/photographers', blurb: 'Showcase your photography portfolio with a stunning website.' },
+              { name: 'Makeup Artists', href: '/services/makeup-artists', blurb: 'Exhibit your artistry and attract new clients.' },
+              { name: 'Wedding Planners', href: '/services/wedding-planners', blurb: 'Display your portfolio and wedding packages.' },
+              { name: 'Event Planners', href: '/services/event-planners', blurb: 'Promote your event planning services.' },
+              { name: 'Lawyers', href: '/services/lawyers', blurb: 'Build trust with a professional website that highlights your expertise.' },
+              { name: 'Yoga Teachers', href: '/services/yoga-teachers', blurb: 'Connect with students and share your practice.' },
+              { name: 'Business Consultants', href: '/services/business-consultants', blurb: 'Present your expertise and consulting services.' },
+              { name: 'Investment Consultants', href: '/services/investment-consultants', blurb: 'Share your financial advisory services.' },
+              { name: 'Online Resume', href: '/services/online-resume', blurb: 'Stand out with a professional online resume.' },
             ].map((svc) => (
               <Link key={svc.name} to={svc.href} className="block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 transition-colors">
                 <div className="flex items-start justify-between">
@@ -266,7 +266,7 @@ const Home = () => {
         </div>
       </motion.section>
 
-      {/* Testimonials Section */}
+      {/* Team Section */}
       <motion.section 
         className="section-padding bg-black"
         initial={{ opacity: 0, y: 50 }}
@@ -277,26 +277,24 @@ const Home = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Check out our <span className="gradient-text">clients' words</span>
+              Meet our <span className="gradient-text">Team</span>
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
+            {teamMembers.map((member, index) => (
               <div key={index} className="bg-gray-900 p-8 rounded-xl border border-gray-800">
-                <div className="flex items-center mb-4">
+                <div className="flex items-center gap-6 mb-4">
                   <img
-                    src={testimonial.avatar}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full mr-4"
+                    src={member.avatar}
+                    alt={member.name}
+                    className="w-24 h-24 md:w-28 md:h-28 rounded-xl object-cover"
                   />
                   <div>
-                    <h4 className="font-semibold text-white">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-400">{testimonial.role}</p>
-                    <p className="text-sm font-semibold text-white">{testimonial.company}</p>
+                    <h4 className="text-xl font-semibold text-white">{member.name}</h4>
                   </div>
                 </div>
-                <p className="text-gray-300 italic">"{testimonial.quote}"</p>
+                <p className="text-gray-300">{member.bio}</p>
               </div>
             ))}
           </div>

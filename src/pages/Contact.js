@@ -13,31 +13,13 @@ const Contact = () => {
 
   const offices = [
     {
-      city: "Warsaw",
-      country: "Poland",
-      address: "ul. Grzybowska 80/82, 00-844 Warsaw",
-      phone: "+48 22 123 4567",
-      email: "warsaw@vedaviksmedia.com",
-      hours: "9 AM - 5 PM CET",
-      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.953581566351!2d21.0117846157965!3d52.22967567976059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8c0a2a8d5d%3A0x6b44f2b3e8e7a0a!2sVedaViks%20Media%20Warsaw!5e0!3m2!1sen!2spl!4v1628587399999!5m2!1sen!2spl",
-    },
-    {
-      city: "Poznań",
-      country: "Poland",
-      address: "ul. Grunwaldzka 182, 60-166 Poznań",
-      phone: "+48 61 123 4567",
-      email: "poznan@vedaviksmedia.com",
-      hours: "9 AM - 5 PM CET",
-      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.953581566351!2d17.0385375157965!3d51.10788527957164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c4b793d5d7%3A0x8f7f8f6f6f6f6f6f!2sVedaViks%20Media%20Poznan!5e0!3m2!1sen!2spl!4v1628587499999!5m2!1sen!2spl",
-    },
-    {
-      city: "Wrocław",
-      country: "Poland",
-      address: "ul. Św. Antoniego 2/4, 50-073 Wrocław",
-      phone: "+48 71 123 4567",
-      email: "wroclaw@vedaviksmedia.com",
-      hours: "9 AM - 5 PM CET",
-      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.953581566351!2d17.0385375157965!3d51.10788527957164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c4b793d5d7%3A0x8f7f8f6f6f6f6f6f!2sVedaViks%20Media%20Wroclaw!5e0!3m2!1sen!2spl!4v1628587599999!5m2!1sen!2spl",
+      city: "New Delhi",
+      country: "India",
+      address: "Maurya Enclave, Block LP, Poorvi Pitampura, Pitampura, New Delhi, Delhi, 110034",
+      phone: "+91-9354785960",
+      email: "hello@vedaviksmedia.com",
+      hours: "9 AM - 5 PM IST",
+      map: "https://www.google.com/maps?q=Maurya+Enclave,+Block+LP,+Poorvi+Pitampura,+Pitampura,+New+Delhi,+Delhi,+110034&output=embed",
     }
   ];
 
@@ -96,10 +78,10 @@ const Contact = () => {
             <p className="text-xl md:text-2xl text-gray-300 mb-8">
               Get a quote or consultation for app development, social media marketing, ad campaigns, avatars, AI product photography, and e‑commerce.
             </p>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+              <div className="flex flex-col md:flex-row justify-center items-center gap-4">
               <a href="#contact-form" className="btn-primary text-lg px-8 py-4">Request a Quote</a>
-              <a href="tel:+48221234567" className="btn-secondary bg-white text-black hover:bg-gray-100 text-lg px-8 py-4">Call +48 22 123 4567</a>
-            </div>
+              <a href="tel:+919354785960" className="btn-secondary bg-white text-black hover:bg-gray-100 text-lg px-8 py-4">Call +91-9354785960</a>
+              </div>
             <div className="mt-6 flex flex-col md:flex-row justify-center items-center gap-6 text-gray-300">
               <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-white" />
@@ -107,7 +89,7 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5 text-white" />
-                <a href="tel:+48221234567" className="hover:text-white">+48 22 123 4567</a>
+                <a href="tel:+919354785960" className="hover:text-white">+91-9354785960</a>
               </div>
             </div>
           </div>
@@ -270,25 +252,41 @@ const Contact = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {offices.map((office, index) => (
-              <div key={index} className="bg-black p-8 rounded-xl border border-gray-800">
-                <h3 className="text-xl font-bold text-white mb-2">{office.city}</h3>
-                <p className="text-gray-400 mb-6">{office.country}</p>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <MapPin className="w-5 h-5 text-white mt-1" />
-                    <p className="text-gray-300">{office.address}</p>
+              <div key={index} className="bg-black p-8 rounded-xl border border-gray-800 md:col-span-3">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">{office.city}</h3>
+                    <p className="text-gray-400 mb-6">{office.country}</p>
+                    <div className="space-y-4">
+                      <div className="flex items-start space-x-3">
+                        <MapPin className="w-5 h-5 text-white mt-1" />
+                        <p className="text-gray-300">{office.address}</p>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <Phone className="w-5 h-5 text-white" />
+                        <p className="text-gray-300">{office.phone}</p>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <Mail className="w-5 h-5 text-white" />
+                        <p className="text-gray-300">{office.email}</p>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <Clock className="w-5 h-5 text-white" />
+                        <p className="text-gray-300">{office.hours}</p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <Phone className="w-5 h-5 text-white" />
-                    <p className="text-gray-300">{office.phone}</p>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Mail className="w-5 h-5 text-white" />
-                    <p className="text-gray-300">{office.email}</p>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Clock className="w-5 h-5 text-white" />
-                    <p className="text-gray-300">{office.hours}</p>
+                  <div>
+                    <div className="rounded-xl overflow-hidden border border-gray-800">
+                      <iframe
+                        title={`Map - ${office.city}`}
+                        src={office.map}
+                        width="100%"
+                        height="360"
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                      ></iframe>
+                    </div>
                   </div>
                 </div>
               </div>
