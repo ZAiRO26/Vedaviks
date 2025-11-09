@@ -53,13 +53,13 @@ const Home = () => {
 
   const teamMembers = [
     {
-      name: "Owner",
+      name: "Ravi Saxena",
       role: "Owner",
       avatar: "/assets/Raviowner.jpg",
       bio: "Leads vision, strategy, and client success."
     },
     {
-      name: "Marketing & Sales Head",
+      name: "Shikhar Saxena",
       role: "Marketing & Sales Head",
       avatar: "/assets/shikharmakting.jpg",
       bio: "Drives growth, partnerships, and revenue."
@@ -286,7 +286,12 @@ const Home = () => {
                     className="w-24 h-24 md:w-28 md:h-28 rounded-xl object-cover"
                   />
                   <div>
-                    <h4 className="text-xl font-semibold text-white">{member.name}</h4>
+                    {member.name && (
+                      <h4 className="text-xl font-semibold text-white">{member.name}</h4>
+                    )}
+                    {member.role && member.role !== member.name && (
+                      <h4 className="text-base font-semibold text-white">{member.role}</h4>
+                    )}
                   </div>
                 </div>
                 <p className="text-gray-300">{member.bio}</p>
