@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { ArrowRight, Play } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -94,8 +94,28 @@ const Home = () => {
     { name: "Salzburg AG", logo: "Salzburg AG" }
   ];
 
+  const location = useLocation();
+  const isProfessional = new URLSearchParams(location.search).get('theme') === 'professional';
+
+  React.useEffect(() => {
+    const id = 'professional-theme-css';
+    const existing = document.getElementById(id);
+    if (isProfessional) {
+      if (!existing) {
+        const link = document.createElement('link');
+        link.id = id;
+        link.rel = 'stylesheet';
+        link.href = '/professional_theme.css';
+        document.head.appendChild(link);
+      }
+    } else if (existing) {
+      existing.remove();
+    }
+  }, [isProfessional]);
+
   return (
-    <div className="min-h-screen bg-black">
+    <div className={isProfessional ? 'professional-theme' : ''}>
+      <div className="min-h-screen bg-black">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center text-center">
         <video
@@ -107,7 +127,7 @@ const Home = () => {
           <source src="/assets/hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-10"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-10 overlay"></div>
         <div className="container-custom relative z-20">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -379,6 +399,7 @@ const Home = () => {
           </Link>
         </div>
       </motion.section>
+      </div>
     </div>
   );
 };

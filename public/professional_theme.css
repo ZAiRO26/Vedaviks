@@ -1,0 +1,57 @@
+/*
+  Professional Theme (Testing)
+  - Primary background: White (#FFFFFF)
+  - Secondary (text/accent): Dark Gray (#333333)
+  - Contrast: White (#FFFFFF) background with #333333 text ≈ 12.6:1
+    which exceeds WCAG AA/AAA for normal text.
+*/
+
+/* Apply to any wrapper that has the professional-theme class */
+.professional-theme .bg-black,
+.professional-theme.bg-black,
+.professional-theme .bg-gray-900,
+.professional-theme.bg-gray-900 {
+  background-color: #FFFFFF !important;
+}
+
+.professional-theme .text-white,
+.professional-theme.text-white,
+.professional-theme .text-gray-300,
+.professional-theme.text-gray-300,
+.professional-theme .text-gray-400,
+.professional-theme.text-gray-400 {
+  color: #333333 !important;
+}
+
+.professional-theme .border-gray-800,
+.professional-theme.border-gray-800 {
+  border-color: #333333 !important;
+}
+
+/* Buttons and interactive accents */
+.professional-theme .btn-primary {
+  background-color: #333333 !important;
+  color: #FFFFFF !important;
+  border-color: #333333 !important;
+}
+
+/* Gradient text override to simple professional color */
+.professional-theme .gradient-text {
+  background: none !important;
+  -webkit-text-fill-color: #333333 !important;
+  color: #333333 !important;
+}
+
+/* Hero overlay should remain dark for legibility over video */
+.professional-theme .overlay {
+  background-color: #333333 !important;
+}
+
+/* Cards */
+.professional-theme .border { border-color: #333333 !important; }
+.professional-theme .text-black { color: #333333 !important; }
+.professional-theme .bg-white { background-color: #FFFFFF !important; }
+
+/* Utility to ensure links remain visible */
+.professional-theme a { color: #333333; }
+.professional-theme a:hover { opacity: 0.8; }
